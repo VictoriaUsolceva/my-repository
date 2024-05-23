@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test site</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link id="up" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Whisper&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="first">
+        <div id="nav">
+            <a href="#DopInfo">Консультации</a>
+            <a href="#About">Обо мне</a>        
+            <a href="#My picture">Мои картины</a>
+            <a href="#Consultation">Записаться</a>
+        </div>
+        <div id="text">
+            <h1 class="text">Художник-декоратор</h1>
+            <p class="text">Мария Усольцева</p>
+            <!-- <p class="text">Фактура, Декор, Цвет - мои главные инструменты</p> -->
+        </div>
+    </div>
+    <div id="dop">
+        <a name="DopInfo"></a>
+        <h1 class="text">Консультация</h1>
+        <div>
+            <h2 class="text"><b>Экспресс консультация</b></h2>
+            <p class="text">Встреча по видеосвязи-1 час <br><br>
+                <b>Вы получаете:</b> <br>
+                - профессиональное мнение по вашему запросу и по преображению вашего пространства.</p>
+            <a href="#Consultation">Записаться</a>
+        </div>
+        <div>
+            <h2 class="text">Разовая консультация</h2>
+            <p class="text">Встреча по видеосвязи-1 час<br><br>
+                <b>Вы получаете:</b> <br>
+                - концепцию пространства: стилистика, колористическое решение в виде коллажей. <br>
+                - рекомендации по подборке предметов мебели и декора (без спецификации)
+            </p> 
+            <a href="#Consultation">Записаться</a>
+        </div>
+        <div>
+            <h2 class="text">Сопровождение</h2>
+            <p class="text">До 5 встреч по видеосвязи <br><br>
+                <b>Вы получаете:</b> <br>
+                - концепцию пространства: стилистика, колористическое решение в виде коллажей. <br>
+                - коллажи по расстановки предметов и организации пространства <br>
+                - рекомендации по подборке предметов мебели и декора (без спецификации) <br>
+                - мою обратную связь по всем возникающим  вопросам <br>
+                -помощь при выборе отделки, предметов мебели и декора в спорных вопросах, чтобы не сливать бюджет <br>
+                </p> 
+            <a href="#Consultation">Записаться</a>
+        </div>
+    </div>
+    <div id="second">
+        <img id="up" src="images/up.png" alt="Стрелка" onclick="Up()" title="Наверх">
+        <script>
+            function Up(){scrollTo(0,0)}
+        </script>
+        <a name="About"></a>
+        <img id="maria" src="images/maria.png" alt="Художник-декоратор">
+        <h1 class="text">Обо мне</h1>
+        <p class="text">
+            Мария Усольцева- практикующий, рисующий декоратор. <br>
+
+            Сейчас людям важнее индивидуальность интерьера и то, какие эмоции он вызывает, что чувствует находящийся в нём человек. Ведь именно В ответ на это создаются интерьерные картины по индивидуальным заказам, показывающие  трендовые идеи, приёмы, цвета, формы, текстуры!
+            <br>
+            При этом, сочетать цвета и фактуры, предметы мебели и декора — это как решать уравнение, в котором от перемены мест слагаемых результат может меняться до неузнаваемости и вызывать совершенно разные эмоции и без знания трендов в интерьере, не видя вектора мы не сможем создавать или приобретать предметы декора, которые будут создавать то самое гармоничное пространство
+            Я стараюсь создавать для вас совместимость, цельность и гармонию в интерьере при помощи декора и интерьерных картин.  
+            <br>
+            Комфорт и индивидуальность. Пожалуй, вот и все требования, которые стоит предъявлять к интерьеру. Ищите к ним синонимы, сколь угодно разбирайте на составляющие, смысл, как образ жизни, от этого не изменится.
+            Я работаю для тех, кто любит дом. И да. Пусть история будет с хорошим концом. Пусть возвращение домой всякий раз превращается в удовольствие, а искусство интерьера прибывает в постоянном развитии!
+            <br>
+        </p>
+    </div>
+    <div id="third">
+        <a name="My picture"></a>
+        <h1 class="text">Галерея работ</h1>
+        <div class="photo">
+            <img id="p-1" src="images/p-1.jpg" alt="Картина 1"
+            onmouseover="this.src='images/pict-1.jpg'"
+            onmouseout="this.src='images/p-1.jpg'">
+            <h2 class="text">Минималистическая абстрация</h2>
+            <p class="text">Материалы: фанера на подрамнике, размер 120*80 см, шпатлевка, акрил, лак.</p>
+        </div>
+        <div class="photo">
+            <img id="p-2" src="images/p-2.jpg" alt="Картина 2" 
+            onmouseover="this.src='images/pict-2.jpg'"
+            onmouseout="this.src='images/p-2.jpg'">
+            <h2 class="text">Абстрактный пейзаж</h2>
+            <p class="text">Удачный выбор независимо от статусного положения. Фанерный планшет, шпатлевка, акрил.</p>
+        </div>
+        <div class="photo">
+            <img id="p-3" src="images/p-3.jpg" alt="Картина 3"
+            onmouseover="this.src='images/pict-3.jpg'"
+            onmouseout="this.src='images/p-3.jpg'">
+            <h2 class="text">Интеллектуальная абстракция</h2>
+            <p class="text">Выполнена на фанерном планшете, размер- 80*70 см, шпатлевка, акрил, лак.</p>
+        </div>
+    </div>
+    <div id="four">
+        <a name="Consultation"></a>
+        <h1 class="text">Запишись на консультацию</h1>
+        <form action="">
+            <input type="text" placeholder="Имя"><br>
+            <input type="text" placeholder="Телефон"><br>
+            <input type="text" placeholder="E-mail"><br>
+            <button>Отправить</button>
+        </form>
+    </div>
+    <div id="five">
+        <div id="info">
+            <p class="text">ИП ***** ***** *****</p>
+            <p class="text">ИНН ************</p>
+            <p class="text">ОГРНИП ************</p>
+            <p class="text">E-mail: *****@mail.ru</p>
+        </div>
+        <div id="contract">
+            <p class="text">Политика обработки персональных данных</p>
+            <p class="text">Договор оферты</p>
+        </div>
+        <a href="https://t.me/mariart_secrets" target="_blank"><img src="images/tg.jpg" alt="Телеграм"></a>
+        <img src="images/wk.jpg" alt="Вконтакте">
+        <img src="images/yt.jpg" alt="Ютуб">
+    </div>
+</body>
+</html>
